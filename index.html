@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="./css/styles.css"/>
-     <link rel="stylesheet" href="./css/main.min.css"/>
-     <title>WebStudio</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/main.min.css"/>     
+        <title>WebStudio</title>
     </head>
     <body>
      <!--Header-->
@@ -25,7 +25,7 @@
          <nav class="nav">
              <ul class="nav__list list">
                  <li class="nav__item">
-                     <a class="nav__link link current" href="./index.html">Студия</a>
+                     <a class="nav__link nav__link--current link" href="./index.html">Студия</a>
                  </li>
                  <li class="nav__item">
                      <a class="nav__link link" href="./portfolio.html">Портфолио</a>
@@ -38,14 +38,14 @@
          <ul class="header__contact list">
             <li class="header__contact-item"> 
                 <a class="header__contact-link  link" href="mailto:info@devstudio.com">
-                    <svg class="header__icon" width="16" height="12" >
+                    <svg class="header__contact-icon" width="16" height="12" >
                         <use href="./images/icons.svg#envelope"></use>
                     </svg>
                     info@devstudio.com</a>
             </li> 
-            <li class="header__contact-item">
+            <li class="header-contact-item">
                 <a class="header__contact-link link  " href="tel:+380961111111">
-                    <svg class="header__icon" width="10" height="16">
+                    <svg class="header__contact-icon" width="10" height="16">
                         <use href="./images/icons.svg#smartphone"></use>
                     </svg>
                      +38 096 111 11 11</a></li>
@@ -54,11 +54,11 @@
       </header>
       <!--Main-->
       <!--"Заказать услугу"-->
-      <main class="main">
-        <section class=" main__title overlay">
+      <main>
+        <section class="hero overlay">
           <div class="container ">
-            <h1 class="main__text"> Эффективные решения для вашего бизнеса </h1>
-            <button class="main__btn" type="button" data-modal-open>Заказать услугу</button>
+            <h1 class="hero__title"> Эффективные решения для вашего бизнеса </h1>
+            <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
           </div>
             
         </section>
@@ -66,8 +66,8 @@
         <section class="benefits">
             <div class="container">
             <ul class="benefits__list card-set list">
-                <li class="card-set__item ">
-                    <div class="benefits__rectangle">
+                <li class="card-set__item">
+                    <div class="benefits__wrapper">
                         <svg class="benefits__icon" width="70" height="70">
                             <use href="./images/icons.svg#antenna"></use>
                         </svg>
@@ -75,17 +75,17 @@
                     <h2 class="benefits__title">Внимание к деталям</h2>
                     <p class="benefits__desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li> 
-                <li class="card-set__item benefits-icon">
-                    <div class="benefits__rectangle">
-                        <svg class="benefits__icon" width="70" height="70">
+                <li class="card-set__item">
+                    <div class="benefits__wrapper">
+                        <svg class="benefits__icon"width="70" height="70">
                             <use href="./images/icons.svg#clock"></use>
                         </svg>
                     </div>
                     <h2 class="benefits__title">Пунктуальность</h2>
                     <p class="benefits__desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="card-set__item benefits-icon">
-                    <div class="benefits__rectangle">
+                <li class="card-set__item">
+                    <div class="benefits__wrapper">
                         <svg class="benefits__icon" width="70" height="70">
                             <use href="./images/icons.svg#diagram"></use>
                         </svg>
@@ -93,8 +93,8 @@
                     <h2 class="benefits__title">Планирование</h2>
                     <p class="benefits__desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="card-set__item benefits-icon">
-                    <div class="benefits__rectangle">
+                <li class="card-set__item">
+                    <div class="benefits__wrapper">
                         <svg class="benefits__icon" width="70" height="70">
                             <use href="./images/icons.svg#astronaut"></use>
                         </svg>
@@ -109,7 +109,7 @@
         <section class="features">
             <div class="container">
             <h2 class="features__title">Чем мы занимаемся</h2>
-            <ul class="features__list card-set list">
+            <ul class="feautures__list card-set list">
                 <li class="card-set__item"> 
                     <div class="label">
                         <img class="label__img" src="./images/cards/box1.jpg" alt="разработка ПО" width="370" height="294" />
@@ -138,7 +138,7 @@
             </div>
         </section>
         <!--Наша команда-->
-        <section class="section team">
+        <section class="team">
             <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list card-set list">
@@ -341,7 +341,9 @@
                             </svg>
                         </a>
                     </li>
-                </ul>    
+                </ul>
+            
+               
             </div>
         </section>
       </main>
@@ -353,7 +355,7 @@
             <span class="footer__logo-web">Web</span><span class="footer__logo-studio">Studio</span>
         </a>
           <address class="address">
-            <ul class="address__contacts">
+            <ul class="contacts">
                 <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
                 <li class="address__item"><a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>

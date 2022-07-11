@@ -7,7 +7,7 @@
     --item: 4;
 }
 
-.benefits__rectangle {
+.benefits__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,10 @@
     top: 774px;
     background-color: #F5F4FA;
     border-radius: 4px;
+}
+
+.benefits__icon {
+    fill: #afb1b8;
 }
 
 .benefits__title {
